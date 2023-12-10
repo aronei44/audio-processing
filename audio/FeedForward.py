@@ -12,7 +12,8 @@ class CNNNetwork(nn.Module):
                 padding=2
             ),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2),
+            # nn.Dropout(0.2)
         )
         self.conv2 = nn.Sequential(
             nn.Conv2d(
@@ -23,7 +24,8 @@ class CNNNetwork(nn.Module):
                 padding=2
             ),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2),
+            # nn.Dropout(0.2)
         )
         self.conv3 = nn.Sequential(
             nn.Conv2d(
@@ -34,7 +36,8 @@ class CNNNetwork(nn.Module):
                 padding=2
             ),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2),
+            # nn.Dropout(0.2)
         )
         self.conv4 = nn.Sequential(
             nn.Conv2d(
@@ -45,7 +48,8 @@ class CNNNetwork(nn.Module):
                 padding=2
             ),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2),
+            # nn.Dropout(0.2)
         )
         self.flatten = nn.Flatten()
         self.linear = nn.Linear(128 * 5 * 4, 10)
