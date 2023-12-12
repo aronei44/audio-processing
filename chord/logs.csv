@@ -1,0 +1,7 @@
+best_params,best_score,score_test,score_train,model
+"{'algo__n_neighbors': 1, 'algo__p': 1, 'algo__weights': 'uniform'}",0.6777297008400347,0.8171875,0.9703125,KNeighborsClassifier
+"{'algo__max_depth': 11, 'algo__max_samples': 19}",0.4453098903351627,0.4390625,0.471484375,RandomForestClassifier
+"{'algo__C': 2.0, 'algo__tol': 0.01}",0.203903566692566,0.21875,0.276953125,SVC
+"{'algo__C': 1.0, 'algo__tol': 0.1}",0.17929052350477215,0.175,0.19453125,LogisticRegression
+"{'algo__max_iter': 2000, 'algo__tol': 0.0001}",0.35585521276332877,0.371875,0.4390625,MLPClassifier
+"{'algo__max_depth': 6, 'algo__subsample': 0.6}",0.8226551282016082,0.8859375,0.974609375,GradientBoostingClassifier
